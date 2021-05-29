@@ -29,6 +29,9 @@ public class CurrencyConvertService {
 	public CurrencyConvResponse getRateForTarget(CurrencyConvRequest params) {
 		CurrencyConvResponse currencyConvResponse = null;
 		try {
+			if(params.getSource().equals(params.getTarget())) {
+				return currencyConvResponse = AppUtils.setResponse(params, params.getMoney());
+			}
 			IoExchangeResponse responseForApi = restTemplate.getForObject(rateApi + accessKey, IoExchangeResponse.class);
 			if (responseForApi != null && responseForApi.getSuccess()) {
 				if (responseForApi.getRates() != null) {
