@@ -1,0 +1,11 @@
+access:
+    key: 8b05b6aef8237b15b6ce4a52361f6632
+rate:
+    api: http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=
+server:
+    port: 8080
+symbols:
+    api: http://api.exchangeratesapi.io/v1/symbols?access_key=
+spring:
+    jackson:
+        default-property-inclusion: NON_NULL
