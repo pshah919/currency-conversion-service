@@ -19,10 +19,6 @@ public class AppSecurity extends WebSecurityConfigurerAdapter {
                 .withUser("superadmin")
                 .password("password")
                 .roles("ADMIN");
-        auth.inMemoryAuthentication()
-                .withUser("admin")
-                .password("admin")
-                .roles("ADMIN");
 
     }
 
