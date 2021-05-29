@@ -1,8 +1,8 @@
-#Currency conversion api
+# Currency conversion api
 This API is designed to convert currency from source currency of the country to targt currecy 
 foreign exchange rates are retrived form https://exchangeratesapi.io/ and convert the currency.
 
-#App hosting:
+# App hosting:
 App is hosted on  AWS infra at http://35.154.7.59:8080/swagger-ui.html#  
 ##### login creds superadmin:{password}
 loin in to app with above credentials and convert the currencies 
