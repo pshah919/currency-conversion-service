@@ -12,7 +12,7 @@ loin in to app with above credentials and convert the currencies
 {
 "source": "INR",
 "target": "USD",
-"value":"40000.00"
+"money":"40000.00"
 }
 ```
 * error currencyConvResponse 400 bad currencyConvRequest
